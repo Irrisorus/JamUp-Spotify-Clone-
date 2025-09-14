@@ -1,0 +1,147 @@
+.playlist-selector-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100; /* Higher than artist popup */
+  animation: fadeIn 0.3s ease;
+}
+
+.playlist-selector {
+  background-color: #282828;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 450px;
+  max-height: 90vh;
+  position: relative;
+  animation: slideUp 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.selector-header {
+  padding: 20px 20px 10px 20px;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.selector-header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: #fff;
+}
+
+.track-name {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+.playlists-container {
+     flex-direction: column;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 50vh;
+    display: flex
+;
+    gap: 10px;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.playlist-item:hover {
+  background-color: #333;
+}
+
+.playlist-item.selected {
+  background-color: rgba(29, 185, 84, 0.2);
+}
+
+.playlist-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-name {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.playlist-count {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.selection-indicator {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.playlist-item.selected .selection-indicator {
+  color: #1DB954;
+}
+
+.action-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #3e3e3e;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-button {
+  background-color: #1DB954;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-button:hover:not(:disabled) {
+  background-color: #1ed760;
+  transform: scale(1.02);
+}
+
+.add-button:disabled {
+  background-color: #535353;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.success-message p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+}

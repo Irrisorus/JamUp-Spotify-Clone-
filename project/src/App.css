@@ -1,0 +1,24 @@
+.main-wrapper{
+
+    padding: 0 10px 0px 10px ;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    user-select: none
+}
+.main-container{
+    border-radius: 10px;
+    min-width: 600px;
+   width:calc(100% - 400px - 400px);
+    padding: 24px 12px;
+    background: var( --background-base);
+    /* -webkit-box-shadow: 0px 0px 55px 15px rgba(0, 0, 0, 0.6) inset;
+    -moz-box-shadow: 0px 0px 55px 15px rgba(0, 0, 0, 0.6) inset;
+    box-shadow: 0px 0px 55px 15px rgba(0, 0, 0, 0.6) inset;*/
+} 
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

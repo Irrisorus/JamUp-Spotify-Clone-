@@ -1,0 +1,172 @@
+/* RegistrationForm.css */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+  padding: 24px;
+}
+
+.registration-form-wrapper {
+  width: 100%;
+  max-width: 450px;
+  background-color: #181818;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.registration-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.registration-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 24px);
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.divider span {
+  background-color: #181818;
+  padding: 0 16px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.remember-me {
+  margin-top: 8px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  border-color: #1DB954;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #1DB954;
+  border-color: #1DB954;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-label {
+  margin-left: 8px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 32px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #1DB954;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.login-link a:hover {
+  color: #1ed760;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .registration-form-wrapper {
+    padding: 24px 16px;
+  }
+  
+  .registration-header h1 {
+    font-size: 24px;
+  }
+}

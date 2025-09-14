@@ -1,0 +1,71 @@
+.tracklist-container {
+  margin-top: 16px;
+  position: relative;
+}
+
+.tracklist {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tracklist thead {
+  position: sticky;
+  top: 80px;
+  background-color: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  height: 36px;
+}
+
+.tracklist th {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-subdued);
+  white-space: nowrap;
+}
+
+.tracklist th.track-number {
+  width: 40px;
+  text-align: center;
+}
+
+.tracklist th.track-title {
+  width: 40%;
+}
+
+.tracklist th.track-album {
+  width: 25%;
+}
+
+.tracklist th.track-date {
+  width: 20%;
+}
+
+.tracklist th.track-duration {
+  width: 60px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .tracklist th.track-album {
+    display: none;
+  }
+  
+  .tracklist th.track-title {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tracklist th.track-date {
+    display: none;
+  }
+  
+  .tracklist th.track-title {
+    width: 80%;
+  }
+}

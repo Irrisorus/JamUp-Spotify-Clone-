@@ -1,0 +1,67 @@
+.profile-settings {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.field-value {
+  font-size: 1rem;
+  padding: 12px 0;
+  color: #a7a7a7;
+}
+
+.form-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+input.error {
+  border-color: #E91429;
+}
+
+.error-message {
+  color: #E91429;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+
+input:focus {
+  border-color: #1DB954;
+  box-shadow: 0 0 0 2px rgba(29, 185, 84, 0.3);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(29, 185, 84, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 4px rgba(29, 185, 84, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 185, 84, 0);
+  }
+}

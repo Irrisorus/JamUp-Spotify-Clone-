@@ -1,0 +1,160 @@
+.song-item {
+  background-color: #282828;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.2s;
+}
+
+.song-item:hover {
+  background-color: #333333;
+}
+
+.song-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  cursor: pointer;
+  border-left: 4px solid #1DB954;
+}
+
+.song-title-preview {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.featured-preview {
+  color: #b3b3b3;
+  font-weight: normal;
+}
+
+.song-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.album-creator .remove-song-btn {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.album-creator .remove-song-btn:hover {
+  background-color: rgba(255, 107, 107, 0.1);
+}
+
+.expand-indicator {
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.song-details {
+  padding: 24px;
+  background-color: #181818;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.form-group input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3E3E3E;
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  background-color: #535353;
+}
+
+.form-group input::placeholder {
+  color: #b3b3b3;
+}
+
+.audio-upload-area {
+  border: 2px dashed #535353;
+  border-radius: 4px;
+  padding: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #181818;
+}
+
+.audio-upload-area:hover {
+  border-color: #1DB954;
+  background-color: #282828;
+}
+
+.audio-upload-area.dragging {
+  border-color: #1DB954;
+  background-color: #282828;
+}
+
+.audio-upload-area.has-file {
+  border-style: solid;
+  border-color: #1DB954;
+}
+
+.audio-file-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #ffffff;
+  word-break: break-all;
+}
+
+.file-size {
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.audio-preview {
+  margin-top: 16px;
+}
+
+.audio-preview audio {
+  width: 100%;
+  border-radius: 4px;
+  /* background-color: #282828; */
+}
+
+@media (max-width: 768px) {
+  .song-header {
+    padding: 12px;
+  }
+  
+  .song-details {
+    padding: 16px;
+  }
+}

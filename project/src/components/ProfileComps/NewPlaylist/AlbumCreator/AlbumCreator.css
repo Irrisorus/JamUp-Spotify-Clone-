@@ -1,0 +1,68 @@
+.album-creator {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 16px;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: dark;
+}
+
+.album-creator h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-align: center;
+  color: #1DB954;
+}
+
+.album-actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.save-album-btn {
+  background-color: #1DB954;
+  color: #000000;
+  border: none;
+  border-radius: 500px;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.save-album-btn:hover {
+  transform: scale(1.04);
+  background-color: #1ed760;
+}
+
+.save-album-btn:active {
+  transform: scale(0.96);
+}
+
+.save-album-btn:disabled {
+  background-color: #535353;
+  color: #b3b3b3;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .album-creator {
+    padding: 24px 12px;
+  }
+  
+  .album-creator h1 {
+    font-size: 24px;
+  }
+  
+  .save-album-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+    width: 100%;
+  }
+}

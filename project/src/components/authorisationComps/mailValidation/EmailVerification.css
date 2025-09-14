@@ -1,0 +1,152 @@
+/* Main container */
+.email-verification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Card styling */
+.email-verification-card {
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fade-in 0.4s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.email-icon {
+  margin-bottom: 1.5rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+  border-radius: 12px;
+  color: #1db954;
+}
+
+
+.email-verification-container h1 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.verification-message {
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.code-inputs {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.code-input {
+  width: 48px;
+  height: 54px;
+  border: 1.5px solid #282828;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  background: #282828;
+}
+
+.code-input:focus {
+  border-color: #1db954;
+  box-shadow: 0 0 0 2px rgba(29, 185, 84, 0.2);
+  outline: none;
+}
+
+
+.resend-section {
+  margin-bottom: 1.5rem;
+}
+
+.timer {
+  color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+.time-value {
+  font-weight: 600;
+  color: #1db954;
+}
+
+.resend-button {
+  background: none;
+  border: none;
+  color: #1db954;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.resend-button:hover {
+  background-color: rgba(29, 185, 84, 0.1);
+}
+
+
+.help-text {
+  color: #727272;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+
+@media (max-width: 480px) {
+  .email-verification-card {
+    padding: 2rem 1.5rem;
+    max-width: 90%;
+  }
+  
+  .code-inputs {
+    gap: 0.5rem;
+  }
+  
+  .code-input {
+    width: 40px;
+    height: 48px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+}

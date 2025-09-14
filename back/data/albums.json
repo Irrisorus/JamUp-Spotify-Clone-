@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Лучшие хиты",
+        "artist": "DJ Mix",
+        "songIds": [1, 2, 1, 104],
+        "cover": "https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "type":"album",
+        "year":2024
+    },
+    {
+        "id": 5,
+        "title": "Энергия дня",
+        "artist": "Максим Олегович",
+        "songIds": [116, 117, 118, 119, 120],
+        "cover":"https://images.pexels.com/photos/5618463/pexels-photo-5618463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "type":"album",
+        "year":2025
+    },
+    {
+        "id": 5,
+        "title": "hood",
+        "artist": "Олег",
+        "songIds": [116, 117, 118, 119, 120],
+        "cover":"https://images.pexels.com/photos/15013326/pexels-photo-15013326/free-photo-of-man-standing-on-the-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "type":"album",
+        "year":1999
+    }
+]

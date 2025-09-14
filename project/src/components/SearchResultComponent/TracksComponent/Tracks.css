@@ -1,0 +1,116 @@
+.tracks {
+  width: 100%;
+}
+
+.tracks__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.track:hover {
+  background-color: var(--surface);
+}
+
+.track:hover .add-to-playlist-btn {
+  opacity: 1;
+}
+
+
+.track__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.track__image-container {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.track__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.track__play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.track:hover .track__play-overlay {
+  opacity: 1;
+}
+
+.track__play-icon {
+  font-size: 16px;
+  color: white;
+}
+
+.track__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.track__title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffff;
+  font-weight: 600;
+}
+.track__title_active{
+  color: var(--primary);
+}
+
+.add-to-playlist-btn{
+  cursor: pointer;
+  
+  width: 16px;
+  height: 16px;
+  border: 3px solid #ffffff3d ;
+  color: #ffffff3d;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 20;
+
+}
+
+.track__artist {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.track__duration {
+  color: var(--text-secondary);
+  font-size: 14px;
+}

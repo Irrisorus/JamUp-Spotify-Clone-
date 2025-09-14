@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "type":"song",
+    "title": "Black Dog",
+    "artist": "Samurai",
+    "audioSrc": "http://localhost:5000/getTrack?id=1",
+    "fileName": "Samurai Black Dog.mp3",
+    "album": "Love",
+    "cover": "https://zf.muzyet.com/images/cover/samurai/samurai-black-dog.jpg",
+    "duration": 264
+  },
+  {
+    "id": 2,
+    "type":"song",
+    "title": "Стыцамен",
+    "artist": "Иван Дорн",
+    "audioSrc": "http://localhost:5000/getTrack?id=2",
+    "fileName": "Иван Дорн - Стыцамен.mp3",
+    "album":"Стыцамен",
+    "cover": "https://zf.muzyet.com/images/cover/samurai/samurai-black-dog.jpg",
+    "duration": 231
+  },
+  {
+    "id": 3,
+    "type":"song",
+    "title": "One Kiss",
+    "artist": "Dua Lipa",
+    "audioSrc": "http://localhost:5000/getTrack?id=3",
+    "fileName": "Dua Lipa - One Kiss.mp3",
+    "album": "Black Dog - Editional",
+    "cover": "https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "duration": 214
+  }
+]

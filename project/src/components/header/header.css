@@ -1,0 +1,132 @@
+.header {
+    background-color: #0a0a0a;
+    padding: 16px 32px;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+  }
+  .header-left, .header-right{
+    width: 220px;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .nav-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .header-center {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 32px;
+    position: relative;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 100%;
+  }
+  .search-logo{
+    
+    height: 36px;
+    color: white;
+    cursor: pointer;
+  }
+  .search-input {
+    width: 100%;
+    padding: 12px 40px;
+    background-color: #242424;
+    border: none;
+    border-radius: 500px;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    background-color: #2a2a2a;
+  }
+  
+  .search-input::placeholder {
+    color: #a7a7a7;
+  }
+  
+  .search-icon {
+    position: absolute;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff0101;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .sign-up-button {
+    background-color: transparent;
+    border: none;
+    color: #a7a7a7;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition:.2s;
+  }
+  
+  .sign-up-button:hover {
+    color: #fff;
+    transform: scale(1.04);
+  }
+  
+  .login-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 500px;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 32px;
+  }
+  
+  .login-button:hover {
+    transform: scale(1.04);
+  }

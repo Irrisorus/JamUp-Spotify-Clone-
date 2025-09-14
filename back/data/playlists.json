@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "title": "Лучшие хиты",
+    "artist": "DJ Mix",
+    "songIds": [
+      1,
+      2
+    ],
+    "cover": "https://images.pexels.com/photos/11053072/pexels-photo-11053072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "type": "playlist"
+  },
+  {
+    "id": 2,
+    "title": "Новая музыка",
+    "artist": "Алексей Смирнов",
+    "songIds": [
+      1,
+      3
+    ],
+    "cover": "https://images.pexels.com/photos/1054400/pexels-photo-1054400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "type": "playlist"
+  },
+  {
+    "id": 3,
+    "title": "trap",
+    "artist": "CAQR",
+    "songIds": [
+      2,
+      3
+    ],
+    "cover": "https://images.pexels.com/photos/1054400/pexels-photo-1054400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "type": "playlist"
+  },
+  {
+    "id": 4,
+    "title": "boom",
+    "artist": "testUser",
+    "songIds": [
+      3
+    ],
+    "cover": "https://images.pexels.com/photos/1054400/pexels-photo-1054400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "type": "playlist"
+  },
+  {
+    "id": 5,
+    "title": "change",
+    "artist": "testUser",
+    "songIds": [
+      2
+    ],
+    "cover": "https://images.pexels.com/photos/1054400/pexels-photo-1054400.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "type": "playlist"
+  }
+]

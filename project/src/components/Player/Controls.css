@@ -1,0 +1,57 @@
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  color: #a7a7a7;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.control-button:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+.control-button:focus {
+  outline: none;
+}
+
+.control-button.active {
+  color: #1DB954;
+}
+
+.control-button.play-pause {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+}
+
+.control-button.play-pause:hover {
+  transform: scale(1.1);
+}
+
+.control-button.repeat.repeat-one:after {
+  content: "1";
+  position: absolute;
+  font-size: 8px;
+  top: -5px;
+  right: -5px;
+}
+
+.shuffle, .repeat {
+  position: relative;
+}
+

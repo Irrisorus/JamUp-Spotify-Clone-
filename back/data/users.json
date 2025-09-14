@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "username": "testUser",
+    "password": "123456789Aa!",
+    "email": "kitsunyaroslav@gmail.com",
+    "likedSongsId": [
+      2,
+      3,
+      1
+    ],
+    "likedPlaylistsId": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "likedAlbumsId": [
+      1,
+      2,
+      3
+    ]
+  }
+]

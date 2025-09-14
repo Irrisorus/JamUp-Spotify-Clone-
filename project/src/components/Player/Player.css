@@ -1,0 +1,96 @@
+.player {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(background-color);
+  color: white;
+  height: 90px;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  margin-top: auto;
+  font-family: 'Circular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.player-left {
+  flex: 1;
+  min-width: 180px;
+  max-width: 30%;
+}
+
+.player-center {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 722px;
+}
+
+.player-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 180px;
+  max-width: 30%;
+}
+
+.controls-wrapper {
+  margin-bottom: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.progress-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.time-current,
+.time-total {
+  font-size: 11px;
+  color: #a7a7a7;
+  min-width: 40px;
+}
+
+.time-current {
+  text-align: right;
+}
+
+.time-total {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .player {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+  }
+  
+  .player-left,
+  .player-center,
+  .player-right {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .player-left {
+    order: 1;
+  }
+  
+  .player-center {
+    order: 2;
+  }
+  
+  .player-right {
+    order: 3;
+    justify-content: center;
+  }
+}
